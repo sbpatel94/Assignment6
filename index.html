@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment 6</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment6.css">
+    <script src="javascript/Assignment6.js"></script>
+</head>
+
+<body>
+<h1> Assignment 6</h1>
+<hr>
+<select onchange="MenuChoice()" id="menu">
+    <option>Please select an option.</option>
+    <option>Show Area 1</option>
+    <option>Show Area 2</option>
+    <option>Show Area 3</option>
+    </select>
+<br>
+<section id="section1" class="section1">
+    
+<label>Please enter a customer ID:</label>
+<input type="text" id="custid">
+<label class="example">The customer ID should be 5 uppercase letters.</label>
+<br>
+<label>Please enter the customer's name:</label>
+<input type="text" id="custname">
+<br>
+<button onclick="CreateCustomer()" id="newcust">Add a new Customer</button>
+<br>
+<hr>
+<label id="result">The operation's result will be displayed here.</label>
+</section>
+<section id="section2" class="section2">
+<label>Please enter the order ID:</label>
+<input type="text" id="orderid">
+<br>
+<label>Please enter shipping name:</label>
+<input type="text" id="shipname">
+<br>
+<label>Please enter shipping address:</label>
+<input type="text" id="shipaddress">
+<br>
+<label>Please enter shipping city:</label>
+<input type="text" id="shipcity">
+<br>
+<label>Please enter shipping postal code:</label>
+<input type="text" id="shipcode">
+<br>
+<button onclick="UpdateAddress()" id="update">Update Shipping Address</button>
+<br>
+<hr>
+<label id="results">The opeation's result will be displayed here.</label>
+</section>
+<section id="section3" class="section3">
+<label>Please enter the customer ID:</label>
+<input type="text" id="customerid">
+<label class="example">The customer ID should be 5 uppercase letters.</label>
+<br>
+<button onclick="DeleteCustomer()" id="delete">Delete Customer</button>
+<br>
+<hr>
+<label id="resultS">The operation's result will be displayed here.</label>
+</section>
+</body>
+</html>

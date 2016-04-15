@@ -1,0 +1,4 @@
+.example {font-style: italic; color: red;}
+section.section1 {visibility: hidden; position: absolute; width: 600px; overflow: scroll;}
+section.section2 {visibility: hidden; position: absolute; width: 600px; overflow: scroll;}
+section.section3 {visibility: hidden; position: absolute; width: 600px; overflow: scroll;}
