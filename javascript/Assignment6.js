@@ -101,12 +101,13 @@ function DeleteCustomer()
     }
         
         objRequestS.open("GET",url,true);
+        objRequestS.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         objRequestS.send();
 }
 
 function OperationResultS(output)
 {
-    if (output.WasSuccessful == 1)
+    if (resultS.DeleteCustomerResult == 1)
     {
         document.getElementById("resultS").innerHTML = "The operation was completed successfully"
     }
